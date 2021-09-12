@@ -9,6 +9,14 @@
     <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
 </head>
 <body>
-    
+    <script>
+        window.onload = ()=>{
+            fetch("https://store.steampowered.com/api/appdetails?appids=1091870").
+                then((r)=>{
+                        console.log(r);
+                    }
+                )
+        }
+    </script>
 </body>
 </html>
